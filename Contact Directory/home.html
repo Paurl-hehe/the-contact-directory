@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Your Website" />
+  <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+    
+</head>
+<body>
+  <header>
+    <h1>Contact Directory</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Contact Directory</h2>
+      <p>Welcome to Contact Directory, your secure hub for managing and protecting your digital network. In a world where personal data is often treated like a commodity, we provide a private sanctuary for the information that matters most.
+
+</p>
+      <p><a href="services.html">Explore our services →</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Secure Storage</h3>
+          <p>Your contacts are encrypted and stored safely, ensuring your personal network stays private.</p>
+        </article>
+        <article class="card">
+          <h3>Privacy First</h3>
+          <p>We never share your data with third parties. You have total control over who sees your info.</p>
+        </article>
+        <article class="card">
+          <h3>Instant Access</h3>
+          <p>Organize and retrieve your contact list from any device, anytime, with seamless syncing.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+``

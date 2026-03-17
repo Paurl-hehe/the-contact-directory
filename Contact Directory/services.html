@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Services page of Your Website" />
+<link rel="stylesheet" href="services.css" />
+  <title>Services</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Directory</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Our Services</h2>
+      <p>What we provide and how it helps users.</p>
+    </header>
+
+    <section aria-label="Service list" class="grid">
+      <article class="card">
+        <h3>Secure Contact Storage</h3>
+        <p>Store unlimited personal and professional contacts in a vault protected by end-to-end encryption.</p>
+        <a href="contact.html">Inquire →</a>
+      </article>
+      <article class="card">
+        <h3>Smart Categorization</h3>
+        <p>Tag and group your contacts (e.g., "Work," "Family," "Clients") for lightning-fast retrieval when you need it.</p>
+        <a href="contact.html">Inquire →</a>
+      </article>
+      <article class="card">
+        <h3>Private Data Export</h3>
+        <p>Easily download your directory in multiple formats (CSV, vCard) so you never lose control of your data.</p>
+        <a href="contact.html">Inquire →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

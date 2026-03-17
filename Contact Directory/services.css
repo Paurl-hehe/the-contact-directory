@@ -1,0 +1,145 @@
+:root {
+  --primary: #1e3a8a;
+  --primary-light: #3b82f6;
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --white: #ffffff;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  /* Added these 3 lines to enable the sticky footer logic */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 { font-size: 1.25rem; color: var(--primary); }
+
+nav ul { display: flex; gap: 2rem; list-style: none; }
+
+nav a { 
+  text-decoration: none; 
+  color: var(--text-muted); 
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover { color: var(--primary-light); }
+
+nav a[aria-current="page"] { 
+  color: var(--primary); 
+  font-weight: 800; 
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Updated main to push footer down */
+main { 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  padding: 40px 20px; 
+  flex: 1; /* This tells main to grow and fill available space */
+  width: 100%;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #312e81 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: var(--radius);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero a {
+  display: inline-block;
+  background: var(--white);
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+
+.card h3 { color: var(--primary); margin-bottom: 10px; }
+
+.card a {
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--primary-light);
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #e2e8f0;
+  color: var(--text-muted);
+  background: var(--white); /* Optional: makes footer stand out on empty pages */
+}
+
+form div { margin-bottom: 15px; }
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
