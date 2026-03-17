@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Home page of Your Website" />
+  <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+    
+</head>
+<body>
+  <header>
+    <h1>Contact Directory</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Contact Directory</h2>
+      <p>Short intro about your site. Explain what users can find here and why it’s useful.</p>
+      <p><a href="services.html">Explore our services →</a></p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Feature One</h3>
+          <p>Brief description of a key feature or value.</p>
+        </article>
+        <article class="card">
+          <h3>Feature Two</h3>
+          <p>Another highlight that invites users to explore deeper.</p>
+        </article>
+        <article class="card">
+          <h3>Feature Three</h3>
+          <p>Showcase something helpful or unique.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+``

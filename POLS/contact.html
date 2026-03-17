@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact page of Your Website" />
+  <link rel="stylesheet" href="contact.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <h1>Your Website</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>Contact Us</h2>
+      <p>Reach out for questions or service requests.</p>
+      <div class="contact-info">
+        <p>Email: mailto:you@example.comyou@example.com</a></p>
+        <p>Phone: tel:+639123456789+63 912 345 6789</a></p>
+      </div>
+    </header>
+
+    <section aria-label="Contact form">
+      <h3>Send a Message</h3>
+        <div>
+          <label for="name">Full Name</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Website. All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
